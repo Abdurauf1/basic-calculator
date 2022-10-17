@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JavaScript Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="input">
+            <input type="number" value="0" id="input">
+            <button onclick="cleanInput()">C</button>
+        </div>
+        <div class="buttons-wrapper">
+            <button class="button" onclick="numberClicked(2)">2</button>
+            <button class="button" onclick="numberClicked(3)">3</button>
+            <button class="button" onclick="numberClicked(1)">1</button>
+            <button class="button" onclick="actionClicked('+')">+</button>
+            <button class="button" onclick="numberClicked(4)">4</button>
+            <button class="button" onclick="numberClicked(5)">5</button>
+            <button class="button" onclick="numberClicked(6)">6</button>
+            <button class="button" onclick="actionClicked('-')">-</button>
+            <button class="button" onclick="numberClicked(7)">7</button>
+            <button class="button" onclick="numberClicked(8)">8</button>
+            <button class="button" onclick="numberClicked(9)">9</button>
+            <button class="button" onclick="actionClicked('*')">*</button>
+            <button class="button" onclick="actionClicked('/')">/</button>
+            <button class="button" onclick="numberClicked(0)">0</button>
+            <button class="button" onclick="numberClicked('.')">.</button>
+            <button class="button" onclick="actionClicked('=')">=</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
