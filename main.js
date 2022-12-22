@@ -67,6 +67,7 @@ function actionClicked(action) {
     }
 }
 function cleanInput() {
-    document.getElementById("input").value = 0;
+    let inputValue = document.getElementById("input");
+    inputValue = 0;
     result = 0;
 }

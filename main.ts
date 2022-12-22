@@ -1,10 +1,10 @@
-var result = 0;
-var actionType = "";
-var equalClicked = false;
+var result: number = 0;
+var actionType: string = "";
+var equalClicked: boolean = false;
 
-function numberClicked(number) {
-  var inputTag = document.getElementById("input");
-  var inputValue = inputTag.value;
+function numberClicked(number: number) {
+  var inputTag = document.getElementById("input") as HTMLInputElement;
+  var inputValue: any = inputTag.value;
   if (inputValue === "0" || equalClicked) {
     inputValue = number;
   } else {
@@ -14,8 +14,8 @@ function numberClicked(number) {
   inputTag.value = inputValue;
 }
 
-function actionClicked(action) {
-  const inputTag = document.getElementById("input");
+function actionClicked(action: string) {
+  const inputTag: any = document.getElementById("input") as HTMLInputElement;
   const inputValue = Number(inputTag.value);
   inputTag.value = 0;
 
@@ -66,6 +66,7 @@ function actionClicked(action) {
 }
 
 function cleanInput() {
-  document.getElementById("input").value = 0;
+  let inputValue: any = document.getElementById("input");
+  inputValue = 0;
   result = 0;
 }
